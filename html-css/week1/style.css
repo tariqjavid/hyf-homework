@@ -1,0 +1,53 @@
+
+
+*{
+padding: 0px;                     /* Global padding and margin*/
+margin: 0px;;
+}
+
+
+body{
+
+    
+        font-family: "Times New Roman", Times, serif;
+    
+}
+
+h2{                                       /*name and email*/
+
+    font-size:30px;
+}
+
+hr{
+
+    color:black;
+    border: 10px saddlebrown black;
+}
+                                                                /*picture*/
+img{
+    widows: 120px;
+    height: 90px;
+}
+.container{
+
+     width: 100%;
+     height: auto;
+     margin:10px;
+    
+}
+
+.main{                                                           /* main heading motivation,experice etc*/
+
+    font-size: 22px;
+
+    padding-top: 2%;
+}
+
+.container ul li{
+
+    font-size: 18px;
+    text-indent: 40px;;
+
+    list-style-type: circle;
+
+}

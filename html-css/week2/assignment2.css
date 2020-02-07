@@ -128,8 +128,8 @@ footer div ul li:nth-child(1)
 {
 
     .header{
-
-        width: 90%;
+width: auto;
+      
     }
 
 iframe{
@@ -188,13 +188,11 @@ footer div ul li{
 
     width: 90%;
 }
-
-.header{
-    width: 90%;
-
-}
 .navbar{
     width: 90%;
+}
+.header{
+    width: auto;
 }
 
 }
@@ -266,7 +264,7 @@ text-align: center;
         height: auto;
     }
     .header{
-        width: 90%;
+        width: auto;
     
     }
     .navbar{

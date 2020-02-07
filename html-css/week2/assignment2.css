@@ -124,8 +124,13 @@ footer div ul li:nth-child(1)
 
         color: #FFFF;
 }
-@media only screen and (max-width:806px)
+@media only screen and (max-width:808px)
 {
+
+    .header{
+
+        width: 90%;
+    }
 
 iframe{
 

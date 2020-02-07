@@ -1,7 +1,7 @@
 *{
 
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 body{
     
@@ -221,7 +221,9 @@ footer div ul li{
 
         flex-direction: column;
         text-align: center;
+        
        }
+    
 .navbar{
 
     height: 150px;
@@ -270,9 +272,5 @@ text-align: center;
     }
    }
 
-   @media only screen and (max-width:360px)
-  {
-
-
-  }
+  
 /*End*/

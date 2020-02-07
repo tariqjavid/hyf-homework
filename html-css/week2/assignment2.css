@@ -260,7 +260,16 @@ text-align: center;
     .header{
         height: auto;
     }
+    .header{
+        width: 90%;
     
+    }
+    .navbar{
+        width: 90%;
+    }
+    .header{
+        height: auto;
+    }
    }
   
 /*End*/

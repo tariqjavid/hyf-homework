@@ -182,7 +182,7 @@ footer div ul li{
 }
 .section img{
 
-    width: 100%;
+    width: 90%;
 }
 
 .header{
@@ -192,9 +192,7 @@ footer div ul li{
 .navbar{
     width: 90%;
 }
-
 }
-
 
 @media only screen and (max-width:427px)
 {
@@ -271,5 +269,10 @@ text-align: center;
         height: auto;
     }
    }
-  
+
+   @media only screen and (max-width:360px)
+  {
+
+
+  }
 /*End*/

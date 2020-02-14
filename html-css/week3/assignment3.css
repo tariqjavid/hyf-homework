@@ -1,0 +1,398 @@
+
+*{
+padding: 0;
+margin: 0;
+list-style: none;
+box-sizing: border-box;
+}
+
+
+.header{
+
+    display: flex;
+    flex-direction: row;
+    background-color: cadetblue;
+    align-items: center;
+
+}
+
+
+ .nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    
+    
+ }
+ .nav li{
+
+    padding: 15px;
+ }
+ .header div{
+
+    padding: 15px;
+ }
+ .signup{
+   padding-left: 40px;
+     font-size: 25px;
+     text-align: justify;
+     
+ }
+ 
+.info{
+padding-left: 40px;
+width: 60%;
+text-align: justify;
+padding: 10px;
+
+}
+
+.progessbar{
+
+display: flex;
+justify-content: center;
+}
+#myProgress {
+    width:60%;
+    background-color: grey;
+    
+
+  }
+  
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: green;
+  }
+
+
+.wraper{
+
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     
+     align-content: center; 
+     text-align: justify;
+   
+}
+
+.steps{
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container{  
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+    
+}    
+.container input{
+
+flex: 5;
+}
+.container label{
+
+    flex: 2;
+}
+
+input{ 
+    
+    width: 200px;
+    height: 50px;
+    border: 1px solid;   
+  
+}
+
+textarea{
+
+    
+
+  width: 500px;
+    height: 150px;
+}
+
+h1{
+
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container h5{
+
+    align-items: flex-start;
+    padding: 2px;
+}
+label{
+
+    font-weight: bold;
+    padding: 5px;
+}
+
+.diffAdress{
+
+  padding-top: 10px;
+    text-align: center;
+}
+ .container button{
+     margin-left: auto;
+    
+    background-color: #4CAF50;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+ }
+ .container select{
+
+    flex: 12;
+    height: 50px;
+ }
+ .checkbox input{
+
+    width: 20px;
+    height: 20px;
+ }
+ .checkbox{
+
+    display: flex;
+    align-items: center;
+ }
+ 
+ /* pagefirst a*/
+ #myBarPage2 {
+  width: 60%;
+  height: 30px;
+  background-color: green;
+}
+
+ .addressInfo{
+
+    padding-top: 70px;
+ }
+ .textarea{
+    margin-top: 80px;
+
+}
+
+.textarea textarea{
+
+    width: 500px;
+
+}
+
+/*page 2*/
+.password input{
+
+    flex: 12;
+    height: 50px;
+ }
+
+ .newsletter
+
+ {
+    margin-top: 20px;
+     display:flex;
+     flex-direction: row;
+    align-content: center;
+ }
+
+ .newsletter input{
+    
+ width: 30px;
+ height: 20px;
+
+ }
+
+ button{
+
+    margin-top: 50px;
+ }
+
+ #signUpfornews{
+
+    margin-top: 10px;
+    font-weight: bold;
+ }
+ #myBarPage2 {
+    width: 30%;
+    height: 30px;
+    background-color: green;
+  }
+  /*page3*/
+
+  .kind{
+
+    padding: 10px 0px 0px 40px;
+  }
+  .chose{
+    padding-left: 40px;
+  }
+
+  #myBarPage3 {
+    width: 60%;
+    height: 30px;
+    background-color: green;
+  }
+
+  .progessbar{
+
+    margin-top: 10px;
+  }
+
+#wraper{
+
+
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#myBarPage3 {
+    width: 60%;
+    height: 30px;
+    background-color: green;
+  }
+
+  .progessbar{
+
+    margin-top: 10px;
+  }
+
+
+  .main{
+
+display: flex;
+flex-direction: column;
+
+align-items: flex-start;
+justify-content: center;
+text-align: center;
+
+
+  }
+
+  .main div input{
+
+    width: 20px;
+    height: 20px;
+   padding: 10px;
+
+  }
+
+  .main div{
+
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: center;
+text-align: center;
+    
+  }
+  .accessries{
+
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .accessries div{
+
+    padding-top: 20px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 60%;
+  }
+  .accessries div img{
+      width: 200px;
+      height: 200px;
+      flex: 2;
+
+  }
+  .accessries div input{
+
+    flex: 1;
+  }
+
+  .accessries div input{
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .accessries div label{
+
+    font-weight: bold;
+  }
+
+  #myBarPage4 {
+    width: 90%;
+    height: 30px;
+    background-color: green;
+  }
+ .nameCard{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30%;
+
+
+ }
+
+ .nameCard div{
+     padding: 10px;
+
+    display: flex;
+ }
+ .nameCard div select{
+justify-content: center;
+width: px;
+height: 50px;
+flex: 1;
+
+
+ }
+.nameCard div input{
+
+    flex: 1;
+} 
+
+.cardAndname
+{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.cardAndname div input{
+
+  flex: 1;
+
+}
+.cardAndname div label{
+ 
+  flex: 1
+  ;
+
+}
+
+.cardDate{
+  margin-top: 10px;
+
+  display:flex;
+  flex-direction: row;
+}
+.cardDate div input{
+ width: 100px;
+}
+
+  

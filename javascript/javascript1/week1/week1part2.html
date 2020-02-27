@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+   function housePrice(x,y,z,m,c) // general function for price calculation
+ {
+
+    var houseVolume=x*y*z;
+    var houseInmeter=m*m;
+    
+    var housePrice=(houseVolume*2.5*1000)+(houseInmeter*300);
+
+    if(c<housePrice)
+    {
+    alert("They are paying alot");
+    }
+    if(c>housePrice)
+    {
+    alert("they are paing less");
+
+    }
+   }
+   
+   var x=window.prompt("Enter width");
+   var y=window.prompt("Enter depth");
+   var z=window.prompt("Enter height");
+   var m=window.prompt("Enter gardenSize");
+   var c=window.prompt("Enter house cost");
+
+    housePrice(x,y,z,m,c);
+
+</script>
+</body>
+</html>

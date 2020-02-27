@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Script>
+    
+    function myAge( yearOfbirth ,yearFuture,livesKind )       
+    {
+
+        var currentDate=new Date();
+        var dateYear =currentDate.getFullYear();// current system date
+
+        var currentAge=dateYear-yearOfbirth;
+        
+       var ageDiff=yearFuture-dateYear;
+  
+       actualAge=ageDiff+currentAge;
+
+       if( livesKind==1)
+       {
+        document.write("Current date of Human=",currentAge,"<br>");
+       document.write( "Age of Human in future=",actualAge,); 
+          
+    }
+
+    else{
+        document.write("Current date of Dog=",currentAge,"<br>");
+        document.write( "Age of Dog in future=",actualAge); 
+
+    }
+}
+     
+    var yearOfbirth=window.prompt("please enter your date of bith") 
+    var yearFuture=window.prompt("please enter you future age")
+    var livesKind=window.prompt("Enter for Human 1 and for Dog 0" );
+
+    myAge(yearOfbirth,yearFuture,livesKind);/* give age in years only*/
+
+
+    </Script>
+</head>
+<body>
+</body>
+</html>

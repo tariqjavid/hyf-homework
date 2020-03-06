@@ -26,8 +26,8 @@
          push();
     }
 
-candy.forEach(function(entry) {
-    console.log(entry);
+candy.forEach(function(en) {
+    console.log(en);
     
 });
   function push()

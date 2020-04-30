@@ -1,3 +1,4 @@
+  
 //Series duration of my life
 
 const seriesDurations = [
@@ -29,11 +30,11 @@ const seriesDurations = [
     {
         let lifeHours=seriesDurations[i].days*24 + seriesDurations[i].hours+(seriesDurations[i].minutes/60);
           let spend=( lifeHours/totalLifehours) *100;
-          total=total+spend;
+          total+=spend;
           
 
           let y=seriesDurations[i].title;
-           console.log (y +"took"+"="+ spend +"%"+" "+"of my life");
+            console.log(`${y} took ${spend} % of my life`)
     }
     
             return total;
@@ -41,6 +42,3 @@ const seriesDurations = [
              let res=lifeSpan();
 
              console.log("Total is "+ res +  "%" +"  " +"of my life");
-   
-
-

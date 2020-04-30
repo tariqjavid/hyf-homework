@@ -1,6 +1,6 @@
 
 
-  let note=[];
+  const note=[];
 
  function addNote(content,id)
  {
@@ -15,7 +15,7 @@
    }
 }
     
-   function dsp(searchByid){
+   function show(searchByid){
 
     for(i=0;i<note.length;i++)
     {
@@ -37,6 +37,7 @@
         {
 
             console.log("NotesID"+ "  :"+note[i].noteId +" "+"Content of Notes"+"  :"+note[i].noteContnt);
+           
             
         }
         
@@ -46,7 +47,7 @@
 
        function getNoteFromId(id)
      {
-           let d=dsp(id)
+           const d=show(id)
     
         if (d)
         {

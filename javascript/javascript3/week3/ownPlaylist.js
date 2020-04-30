@@ -23,18 +23,9 @@
   function getSongByTitle(title) 
    {
      
-    for(let i=0;i<myFavorite_songsList.length;i++)
-    {
-
-        if(myFavorite_songsList[i].title==title)
-        {
-        
-           
-          return  indexNo=myFavorite_songsList.findIndex(x=>x.title===title);// pass anonymous function in findindex function
-          
-        }
-        
-    }
+  
+     return  indexNo=myFavorite_songsList.findIndex(x=>x.title===title);// pass anonymous function in findindex function
+              
 
    }
    let songIndex=getSongByTitle('3 nails in wood'); 

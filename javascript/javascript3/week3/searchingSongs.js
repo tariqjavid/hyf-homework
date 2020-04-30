@@ -43,16 +43,8 @@ const songDatabase = [{
    function getSongByTitle(title)
  
    {
-    for(let i=0;i<songDatabase.length;i++)
-    {
-        if(songDatabase[i].title==title)
-        {
-            return indexNo=songDatabase.findIndex(x=>x.title===title);// pass anonymous function in findindex function
-         
-           
-        }
-        
-    }
+    
+    return indexNo=songDatabase.findIndex(x=>x.title===title);// pass anonymous function in findindex function 
 
    }
    let songIndex=getSongByTitle('Blacker than black');  // getSongByTitle is called here

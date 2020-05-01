@@ -4,10 +4,10 @@
         const btn=document.getElementById("btn")
         const cityName=document.getElementById("cityName")
         const outPut=document.getElementById("outPut")
-        let tagUi=document.createElement("ui");
-        outPut.appendChild(tagUi)
+        let tagUl=document.createElement("ul");
+        outPut.appendChild(tagUl)
         let tagli=document.createElement("li")
-        tagUi.appendChild(tagli);
+        tagUl.appendChild(tagli);
         tagli.style.listStyle="none";
         let linebreak = document.createElement("br");
 

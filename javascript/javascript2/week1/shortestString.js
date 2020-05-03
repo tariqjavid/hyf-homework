@@ -1,6 +1,6 @@
 
 
-const danishWords = ['bil', 'plante', 'kaffe', 'bog', 'ø', 'planetarium'];
+const danishWords = ['billl', 'plante', 'kaffe', 'bog', 'øuuuu', 'planetarium'];
 
 function notThisFunctionNam(arr) {
 	return  arr.reduce(

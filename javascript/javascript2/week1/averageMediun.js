@@ -1,47 +1,23 @@
 
  const housePrices = [3000000, 3500000, 1300000, 40000000, 100000000, 8000000, 2100000];
 
- 
- let sum=0;
-
    function average(hp){
+       let sum=0;
    for(let i=0;i<hp.length;i++){
-
-    let result=hp[i];
-     sum=sum+result;  
+     sum+=hp[i];;  
 }
 
-  let res=sum/hp.length;
- return res;
+  return sum/hp.length;
+ 
 
 }
  
-console.log(average(housePrices));
+console.log('Average house Price:',average(housePrices));
 
+  function median (arr){
+  const mid = Math.floor(arr.length / 2),
+    nums = [...arr].sort((a, b) => a - b);
+  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+};
+console.log(median(housePrices));
 
-
-function mediun( arr)
-{
-const len = arr.length;
-const mid = Math.ceil(len / 2);
-let res;
-if(len%2==1)
-{ 
-       let num = mid-1;
-       res="Mediun is"+housePrices[num]; 
-       return res;
-   
-}
-
-if(len%2==0)
-{
-  
-       let num = mid-1;
-
-        res="Mediun is " + housePrices[num]+" "+ "and" +" "+housePrices[mid];
-       return res;
-
-
-}
-}
- console.log(mediun(housePrices));

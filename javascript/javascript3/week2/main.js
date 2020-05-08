@@ -39,7 +39,7 @@
 
 
 
-//translateAllAtOnce - Should translate all the circles at the same time ....
+//"translateAllAtOnce - Should translate all the circles at the same time" 
 
 /*
     translateAllAtOnce=()=>{

@@ -38,15 +38,15 @@ INNER JOIN status as S  ON T.status_id = S.id;
 
 
 /*Get the name of each status, along with a count of how many tasks have that status*/
-SELECT S.name ,count(*)as "No of Task"  FROM task as T
+SELECT S.name ,count(*)as NoTask  FROM task as T
 left JOIN status as S  ON T.status_id = S.id
 Group by  S.id; 
 
 
 /*Get the names of all statuses, sorted by the status with most tasks first*/
-SELECT T.id,S.name,T.created from task as T
- LEFT JOIN status as S  ON T.status_id = S.id
- order by T.created DESC;
+	SELECT *  FROM task as T
+    	left JOIN status as S  ON T.status_id = S.id
+	order by T.created DESC;
 
 
 

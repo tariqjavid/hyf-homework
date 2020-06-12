@@ -1,0 +1,107 @@
+			
+                  /*searching*/
+
+
+         /*Meal......*/
+/*Get all meals*/
+
+	SELECT * from meal;
+/*Add a new meal*/
+
+	insert into meal
+	(title,description,created,location,price)
+ 	values
+	('fish','fish pakora','2020-05-04 18:26:44','sydhavn',150);
+
+/*Get a meal with any id, fx 1*/
+
+	select *from  meal
+	where meal_id=1;
+
+/*Update a meal with any id, fx 1. Update any attribute fx the title or multiple attributes*/
+
+	update meal
+	set price=200
+	where meal_id=1;
+
+/*Delete a meal with any id, fx 1*/
+	Delete from meal 
+	where meal_id=3;
+
+			/*Reservation.....*/
+
+/*Get all reservations*/
+	select *from reservation; 
+/*Add a new reservation*/
+	insert into reservation
+	(meal_id,created,user_id) 
+	values
+	(1,'2020-05-04 13:26:44' ,1);
+
+/*Get a reservation with any id, fx 1*/
+	select *from reservation 
+	where  meal_id=1;
+
+/*Update a reservation with any id, fx 1. Update any attribute fx the title or multiple attributes*/
+	update reservation 
+	set meal_id=1
+	where user_id=2
+/*Delete a reservation with any id, fx 1*/
+	select * from reservation 
+	where reservation_id=2;
+
+
+			/*Queries to write.....*/
+
+  /*Get all reviews*/
+  	Select * from review;
+/*Add a new review*/
+	insert into review(title,description,created,meal_id) values('rice','it is very tasty','2020-04-05 15:44:11',1);
+
+ /*Get a review with any id, fx 1*/
+	select *from  review
+	where review_id=1;
+
+/*Update a re view with any id, fx 1. Update any attribute fx the title or multiple attributes*/
+
+	update review
+	set description='is realy good type of food'
+	where review_id=1;
+
+/*Delete a review with any id, fx 1*/
+	delete from review
+	where review_id=1;
+
+
+		/*Additional Functionality*/
+
+     /**/
+
+	Select *from meal
+	where price<90;
+
+/*Get meals that still has available reservations*/
+
+	select * from 
+	reservation;
+
+/*Get meals that has been created between two dates*/
+
+Select *from meal
+where created>='2020-05-04 13:26:44' and created<='2020-05-06 18:26:44';
+
+
+  /* Get the meals that have good reviews*/
+
+	select * from meal
+	inner join  review
+	on meal.meal_id=review.meal_id
+	where star like '*****';
+
+/* Get reservations for a specific meal sorted by created_date*/
+
+	select * from reservation
+	where created='2020-05-04 17:29:44';
+
+
+

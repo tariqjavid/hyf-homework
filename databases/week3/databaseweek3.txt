@@ -45,7 +45,7 @@
 /*Update a reservation with any id, fx 1. Update any attribute fx the title or multiple attributes*/
 	update reservation 
 	set meal_id=1
-	where user_id=2
+	where user_id=2;
 /*Delete a reservation with any id, fx 1*/
 	select * from reservation 
 	where reservation_id=2;
@@ -101,7 +101,9 @@ where created>='2020-05-04 13:26:44' and created<='2020-05-06 18:26:44';
 /* Get reservations for a specific meal sorted by created_date*/
 
 	select * from reservation
-	where created='2020-05-04 17:29:44';
+        inner join meal
+        on meal.meal_id=reservation_id;
+ 	where created='2020-05-04 17:29:44';
 
 
 

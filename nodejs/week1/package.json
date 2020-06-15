@@ -1,0 +1,19 @@
+{
+  "name": "Nodeprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tariq Javid",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "router": "^1.3.5",
+    "validator": "^13.0.0"
+  }
+}

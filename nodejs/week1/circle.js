@@ -1,4 +1,4 @@
-class circle {
+class Circle {
           constructor(radius) {
                     this.radius = radius;
           }
@@ -7,15 +7,15 @@ class circle {
                     return 2 * this.radius;
           }
           getArea() {
-                    return Math.PI * this.radius * this.radius;
+                    return Math.PI * Math.pow(this.radius, 2);
           }
           getCircumference() {
                     return 2 * Math.PI * this.radius;
           }
 }
 
-const c1 = new circle(10);
+const circle1 = new Circle(10);
 
-console.log(c1.getDiameter());
-console.log(c1.getArea());
-console.log(c1.getCircumference());
+console.log(circle1.getDiameter());
+console.log(circle1.getArea());
+console.log(circle1.getCircumference());

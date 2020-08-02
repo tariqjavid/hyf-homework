@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    "dev": "npm run server",
+    "start": "node ./src/backend/index.js",
+    "server": "nodemon ./src/backend/index.js"
+
   },
   "keywords": [],
   "author": "Tariq Javid",

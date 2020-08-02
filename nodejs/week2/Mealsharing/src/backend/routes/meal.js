@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
           }
           res.send(meals);
 });
-router.get("/meals/:id", (req, res) => {
+router.get("/:id", (req, res) => {
           // route with id
           const getId = parseInt(req.params.id);
           const getMeal = meals.filter((meal) => meal.id === getId);
@@ -20,8 +20,8 @@ router.get("/meals/:id", (req, res) => {
 
 router.get("/meals", (req, res) => {
           // Query method
-          const keyValue = Object.keys(req.query);
-          if (keyValue[0] == "maxPrice") {
+          const { maxPrice, title, createdAfter, limit } = req.quer;
+          if (maxPrice) {
                     //using maxPrice
                     const getPrice = parseInt(req.query.maxPrice);
                     const getMeal = meals.filter(
@@ -33,10 +33,10 @@ router.get("/meals", (req, res) => {
                               );
                     }
                     res.send(getMeal);
-          } else if (keyValue[0] == "title") {
+          } else if (title) {
                     //using title
                     const getTitle = req.query.title;
-                    const exp = getTitle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+                    /* const exp = getTitle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
                     const pattern = new RegExp(
                               "(?:^|\\W)" + exp + "(?:$|\\W)",
                               "i"
@@ -44,14 +44,19 @@ router.get("/meals", (req, res) => {
 
                     const getMeal = meals.filter((meal) =>
                               pattern.test(meal.title)
-                    );
+                    );*/
+                    const getMeal = meals.filter((item) => {
+                              return item.title
+                                        .toLowerCase()
+                                        .includes(getTitle.toLowerCase());
+                    });
                     if (!getMeal.length) {
                               res.status(404).send(
                                         "Meal does not  exists of this price"
                               );
                     }
                     res.send(getMeal);
-          } else if (keyValue[0] == "createdAfter") {
+          } else if (createdAfter) {
                     //using createdAfter date
                     const getDate = Date.parse(req.query.createdAfter);
 
@@ -64,11 +69,11 @@ router.get("/meals", (req, res) => {
                               );
                     }
                     res.send(getMeal);
-          } else if (keyValue[0] == "limit") {
+          } else if (limit) {
                     // using limit
                     const getLimit = parseInt(req.query.limit);
                     const getMeal = meals.splice(0, getLimit);
-                    console.log(getMeal);
+
                     if (!getMeal.length) {
                               res.status(404).send(
                                         "Meal does not  exists on this date"

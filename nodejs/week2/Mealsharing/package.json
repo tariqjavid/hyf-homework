@@ -1,0 +1,20 @@
+{
+  "name": "Meals_Sharing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "dev": "npm run server",
+    "start": "node ./src/backend/index.js",
+    "server": "nodemon ./src/backend/index.js"
+
+  },
+  "keywords": [],
+  "author": "Tariq Javid",
+  "license": "ISC",
+  "dependencies": {
+    "Router": "^2.1.0",
+    "express": "^4.17.1"
+  }
+}

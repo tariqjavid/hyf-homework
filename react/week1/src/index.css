@@ -5,7 +5,8 @@
     height: 200px;
     text-align: center;
     background-color: honeydew;
-    margin: auto;
-    
-    
+    margin: auto;    
+}
+.wraper ul li{
+    list-style: none;
 }

@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "./index.css";
 import Timer from "./timer";
-class Todo extends Component {
+class App extends Component {
           constructor(props) {
                     super(props);
                     this.state = {
                               list: [],
-                              todoList: this.props.todoList,
                               checked: false,
                               count: 0,
                     }; // end of state
@@ -14,7 +13,7 @@ class Todo extends Component {
 
           addList = () => {
                     let arrayList = this.state.list;
-                    let items = this.state.todoList;
+                    let items = this.props.todoList;
                     let item = items[Math.floor(Math.random() * items.length)];
                     arrayList.push(item);
                     this.setState({ list: arrayList });
@@ -105,4 +104,4 @@ class Todo extends Component {
                     );
           }
 }
-export default Todo;
+export default App;

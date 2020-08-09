@@ -1,0 +1,12 @@
+.wraper{
+
+    border: 1px gray solid;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: honeydew;
+    margin: auto;    
+}
+.wraper ul li{
+    list-style: none;
+}

@@ -1,0 +1,22 @@
+/* Get all the tasks assigned to users whose email ends in @spotify.com*/
+
+	select * from  task
+	inner join user on task.status_id=user.id
+	where user.email like '%@spotify.com';
+
+/* Get all the tasks for 'Donald Duck' with status 'Not started*/
+
+	select  *from  task
+	right join user on task.status_id=user.id
+	where user.name='Donald Duck' and task.status_id is null;
+
+/*Get all the tasks for 'Maryrose Meadows' that were created in september (hint: month(created)=month_number)*/
+
+	select  * from  task
+	right join user on task.status_id=user.id
+	where user.name='Maryrose Meadows' and month(task.created)= '09';
+
+/*Find how many tasks where created in each month, e.g. how many tasks were created in october, how many tasks were created in november, etc. (hint: use group by)*/
+	
+	select created as Months,count(created) as "Monthly wiseTask" from  task
+	group by month(created);

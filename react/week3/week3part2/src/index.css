@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.wraper{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.listDiv{
+
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+  
+  
+}
+.listDiv li{
+    padding: 10px;
+}
+.listDiv button{
+    margin: 10px;
+}
+.addBtn{
+
+    background-color: green;
+    height: 30px;
+    font-size: 20px;
+}
+
+.addItem{
+
+    display: flex;
+    padding: 10px;
+    margin:auto;
+}
+
+.edit{
+    border:2px solod black;
+}

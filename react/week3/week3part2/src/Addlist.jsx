@@ -21,12 +21,12 @@ class Addlist extends Component {
 // Add list
        addItem=(e)=>{
         const value=e.target.value
-        if(e.target.name=='description')
+        if(e.target.name==='description')
         {
 
           this.setState({description:value}) 
            }
-        if(e.target.name=='date')
+        if(e.target.name==='date')
         {
           this.setState({created_date:value}) 
             }
@@ -34,20 +34,20 @@ class Addlist extends Component {
        }
          // Add list button handle
         HandleInput=(e)=>{
-          const list= this.state.list;
+         
           const description = this.state.description;
           const created_date = this.state.created_date;
           const arrayList=this.state.todoList;
           const obj={description , created_date }
          
-            if(obj.description!=''&&obj.created_date!='')
+            if(obj.description!==''&&obj.created_date!=='')
             {
               arrayList.push(obj)
               this.setState({ list:arrayList,
                      });
                      
             }
-            if(obj.description==''&& obj.created_date=='')
+            if(obj.description===''&& obj.created_date==='')
             {
               alert('plase fill descriptiona date')
             }
@@ -56,7 +56,7 @@ class Addlist extends Component {
   // delete
     delete = (del) => {
        const getItem = this.state.list.filter(
-      (val, index) => index != del
+      (val, index) => index !== del
     );
 
     this.setState({ list: getItem });
@@ -71,7 +71,7 @@ class Addlist extends Component {
         };
         //if array is empty then no item
         emptyArray = () => {
-         if (this.state.list.length == 0) {
+         if (this.state.list.length === 0) {
          return <li>Not items selected</li>;
         }
       };
@@ -97,7 +97,7 @@ class Addlist extends Component {
         const value=this.state.updateValue;
         const changeList=this.state.todoList.filter((val,i)=>
     {
-       if(i==index )
+       if(i===index )
        {
         val.description=value;
        }
@@ -121,13 +121,13 @@ class Addlist extends Component {
 {/* end of  add list items*/ }
 
         
-        <ul>{this.emptyArray()}{this.state.list.map((val, index) => (<div className="listDiv">
+        <ul>{this.emptyArray()}{this.state.list.map((val, index) => (<div key ={index} className="listDiv">
                 
                  {/* display text box regarding id when clcik on edit button*/ }
-                 { this.state.edit==false && index==this.state.linethrough &&<input  claaName="edit" name="update" onChange={(e)=>this.updatehandle(e)} type="text"></input>}
+                 { this.state.edit===false && index===this.state.linethrough &&<input  claaName="edit" name="update" onChange={(e)=>this.updatehandle(e)} type="text"></input>}
                 
                 {/* render description follow up check box through line on text*/ }
-                 <li style={this.state.checked && index==this.state.linethrough ? {textDecoration:"line-through"}: {textDecoration:"none"}}>
+                 <li key={index} style={this.state.checked && index===this.state.linethrough ? {textDecoration:"line-through"}: {textDecoration:"none"}}>
                   {
                     val.description 
                   }
@@ -135,15 +135,15 @@ class Addlist extends Component {
                 </li>
 
                 <input
-                  type="checkbox"checked={ index==this.state.linethrough && this .state.checked }
+                  type="checkbox"checked={ index===this.state.linethrough && this.state.checked }
                   onClick={(e) =>this.checkedUncked(index)}>
                       
                   </input>
                 <button onClick={() => this.delete(index)}>Delete</button>
                 {/* show up edit button or not*/ } 
-              {  this.state.edit==true &&<button onClick={()=>this.edit(index)}>Edit</button>}
+              {  this.state.edit===true &&<button onClick={()=>this.edit(index)}>Edit</button>}
               {/* show up edit update  with regarding to id*/ }
-               { this.state.edit==false && index==this.state.linethrough && <button onClick={()=>this.updateButton(index)}>Update</button>}
+               { this.state.edit===false && index===this.state.linethrough && <button onClick={()=>this.updateButton(index)}>Update</button>}
 
                 </div>
             )

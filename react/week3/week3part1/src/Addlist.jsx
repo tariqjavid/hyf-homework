@@ -12,6 +12,7 @@ class Addlist extends Component {
       count: 0,
       edit:true
     }; // end of state
+    console.log(this.state.newProps)
   }
 
   componentDidMount()
@@ -33,7 +34,7 @@ class Addlist extends Component {
   };
     delete = (del) => {
     const getItem = this.state.list.filter(
-      (val, index) => index !== del
+      (val, index) => index != del
     );
 
     this.setState({ list: getItem });
@@ -50,8 +51,8 @@ class Addlist extends Component {
   };
   //
   emptyArray = () => {
-    if (this.state.list.length === 0) {
-      return <li>No items selected</li>;
+    if (this.state.list.length == 0) {
+      return <li>Not items selected</li>;
     }
   };
   render() {
@@ -63,8 +64,8 @@ class Addlist extends Component {
         <h1>TodoList</h1>
         <Timer />
         <button  className="addBtn" onClick={() => this.addList()}>Add activity</button>
-        <ul>{this.emptyArray()}{this.state.list.map((val, index) => (<div key={index} className="listDiv">
-        <li key={index} style={this.state.checked && index===this.state.linethrough ? {textDecoration:"line-through"}: {textDecoration:"none"}}>
+        <ul>{this.emptyArray()}{this.state.list.map((val, index) => (<div className="listDiv">
+        <li style={this.state.checked && index==this.state.linethrough ? {textDecoration:"line-through"}: {textDecoration:"none"}}>
                   {
                     val.description
                   }
@@ -72,7 +73,7 @@ class Addlist extends Component {
                 
 
                 <input
-                  type="checkbox"checked={index===this.state.linethrough && this.state.checked }
+                  type="checkbox"checked={ index==this.state.linethrough && this .state.checked }
                   onClick={(e) =>this.checkedUncked(index)}>
                       
                   </input>

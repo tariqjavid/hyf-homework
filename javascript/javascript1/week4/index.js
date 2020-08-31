@@ -14,7 +14,7 @@ const questions={ // start of Object of questions
        
 }
 
-const answers={ // start of  Object of answers 
+const answer={ // start of  Object of answers 
     answer1:(str)=>{
         const reg=/Benjamin/g;
         if(str.search(reg)!=-1)
@@ -90,43 +90,43 @@ function getReply(command)// getReply function body
     if(replace(questions.question1).localeCompare(replace(command))==0)
     {
        
-         return answers.answer1(command);
+         return answer.answer1(command);
          
     }
     if(replace(questions.question2).localeCompare(replace(command))==0)
     {
-         return answers.answer2;
+         return answer.answer2;
     }
     if(replace(questions.question3).localeCompare(replace(command))==0)
     {
-         return answers.answer3;
+         return answer.answer3;
     }
     if(replace(questions.question4).localeCompare(replace(command))==0)
     {
-         return answers.answer4;
+         return answer.answer4;
 
     }
     if(replace(questions.question5).localeCompare(replace(command))==0)
     {
-         return answers.answer5;
+         return answer.answer5;
     }
     if(replace(questions.question6).localeCompare(replace(command))==0)
     {
-         return answers.answer6;
+         return answer.answer6;
     }
     if(replace(questions.question7).localeCompare(replace(command))==0)
     {
-         return answers.answer7();
+         return answer.answer7();
     }
     if(replace(questions.question8).localeCompare(replace(command))==0)
     {
-        return answers.answer8(command);
+        return answer.answer8(command);
         
     }
     if(replace(questions.question9).localeCompare(replace(command))==0)
     {
         
-        return (answers.answer9(command))
+        return (answer.answer9(command))
     }
     else{
 
@@ -134,7 +134,7 @@ function getReply(command)// getReply function body
     }    
 }
 
-const reply=getReply("Hello my name is Benjamin")// calling of getReply function
+const reply=getReply("Remove fishing from my todo")// calling of getReply function
 
  console.log(reply)
 

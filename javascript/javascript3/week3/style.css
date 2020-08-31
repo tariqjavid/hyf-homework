@@ -1,0 +1,17 @@
+ul li{
+
+    list-style: none;
+}
+p{
+    height: 210px;
+    width: 450px;
+    background-color:#fafaf5
+}
+.cursor{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition-duration: 100ms;
+    transition-timing-function:ease-out;
+
+}

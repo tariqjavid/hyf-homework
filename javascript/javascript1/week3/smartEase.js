@@ -47,11 +47,11 @@
 
        function getNoteFromId(id)
      {
-           const d=show(id)
+           const getshow=show(id)
     
-        if (d)
+        if (getshow)
         {
-          console.log(d);
+          console.log(getshow);
 
         }
         else{

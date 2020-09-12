@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/*Template*/
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; 
+}
+*{
+  margin: 0;
+  padding: 0;  
+}
+a{
+  list-style: none;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;  
+
+  } 
+  .header{
+    display: grid;
+    grid-template-columns: auto 100px ;
+  align-items: center;
+  }
+  .header img
+  {
+    margin-top: 10px;
+   
+  }
+  .sessionName{
+    text-align: center;
+    height: 20px;
+    text-decoration: underline;
+  }
+.menubar{
+  width: 90%;
+ display:grid;
+ grid-auto-flow: column;
+
+justify-items: center;
+margin-left: auto;
+margin-right: auto;
+height: 80px;
+align-items: center;
+}
+.menubar li{
+
+  list-style: none; 
+ border: 1px solid white; 
+}
+.menubar li a{
+  text-decoration: none;
+}
+.section
+{
+width: 90%;
+height: auto;
+margin: auto;
+display: grid;
+grid-template-columns:repeat(1,auto);
+
+}
+.meal{
+
+  width: 300px;
+  height: 300px;
+  border: 1px solid green;
+}
+divFooter{
+
+  margin: auto;
+}
+.footer{
+  width: 60%;
+  background-color:	#696969;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  border: 1px solid black;
+ 
+  margin:10px auto 10px auto;
+}
+.footer li{
+  color: white;
+}
+.mealsBox
+{
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid red;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  box-shadow: 0 0 20px 0 rgb(72,64,116 ,0.7);
+  background-color:#f2f2f2;
+  border-radius:25px;
+  border: 2px solid #E0b16E;
+}
+.homeSearch{
+  background-color:#f2f2f2;
+  text-align: center;
+  display: grid;
+  grid-template-rows:auto;
+  margin: 20px
+}
+.homeSearch p {
+ padding: 10px;
+}
+.mealsBox p{
+  margin:10px;
+}
+.mealsBox h1{
+  padding:5px;
+}
+.mealName{
+
+  color:blue;
+  text-align: center;
+  font-size: 14px; 
+}
+.titlename{
+
+  margin-top:10px;
+  text-align: center;
+  font-size: 14px;
+}
+.mealImg{
+ padding-top:10px;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  border-radius:20px;
+}
+.btn
+{
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 70%;
+  background: #3366cc;
+  color: #fff;
+  border: 1px solid #3366cc;
+  border-radius: 10px;
+  margin:0 auto 10px auto;
+  text-align: center;
+  
+}
+.btn:hover {
+  color: #ffff00;
+  background: #000;
+  border: 1px solid #fff;
+  }
+  /* join us */
+.textBox{
+
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+}
+.joinus{
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid red;
+  width: 50%;
+  box-shadow: 0 0 20px 0 rgb(72,64,116 ,0.7);
+  background-color:#f2f2f2;
+  border-radius:25px;
+  border: 2px solid #E0b16E;
+}
+.joinus h2{
+  text-align: center;
+  margin-top: 10px;
+}
+.outerDiv h2{
+  font-size: 15px;
+  padding-bottom:10px;
+}
+.outerDiv
+{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: grid;
+  justify-items: center;
+   
+}
+.outerDiv textarea{
+
+  width: 300px;
+  height: 100px;
+}
+.innerDiv{
+  margin-top: 20px;
+}
+/*home*/
+.wraper{
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid red;
+  width: 50%;
+  
+  box-shadow: 0 0 20px 0 rgb(72,64,116 ,0.7);
+  background-color:#f2f2f2;
+  border-radius:25px;
+  border: 2px solid #E0b16E;
+  display:grid;
+  grid-auto-flow: row;
+  justify-items: center;
+
+}
+.search{
+
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+.info
+{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top:10px;
+}
+/*Reserve*/
+.reserve
+{
+  display:flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid red;
+  width: 80%; 
+  box-shadow: 0 0 20px 0 rgb(72,64,116 ,0.7);
+  background-color:#f2f2f2;
+  border-radius:25px;
+  border: 2px solid #E0b16E;
+}
+#guest
+{
+  width: 40px;
+}
+.lpic img{
+
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 50px;
+  margin:auto 
+}
+.lpic h2{
+  text-align: center;
+  color: blue;
+}
+.rform{
+  border:1px solid green;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 0 rgb(72,64,116 ,0.7);
+}
+/*thanks*/
+.thanks_back{
+  font-size: 12px;
+}
+
